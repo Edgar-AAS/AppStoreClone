@@ -13,12 +13,11 @@ protocol LocalServicesProtocol {
 
 class Service: LocalServicesProtocol {
     func searchApps(text: String, completion: @escaping (Result<[App], Error>) -> Void) {
-        
         guard let url = URL(string: "http://localhost/app-store/v1/apps?search=\(text)") else {
             completion(.failure(NetworkError.invalidURL))
             return
         }
-        
+    
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             if let error = error {
                 completion(.failure(error))

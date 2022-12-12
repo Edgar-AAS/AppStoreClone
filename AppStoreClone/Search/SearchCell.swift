@@ -10,6 +10,8 @@ class SearchCell: UITableViewCell {
     let screenshot2ImageView: UIImageView = .screenshotImageView()
     let screenshot3ImageView: UIImageView = .screenshotImageView()
     
+    static let searchCellReuseId = String(describing: SearchCell.self)
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
@@ -60,22 +62,22 @@ class SearchCell: UITableViewCell {
         guard let model = app else { return }
         titlelabel.text = model.nome
         companyLabel.text = model.empresa
-        iconImageView.loadImage(from: model.iconeUrl)
+        iconImageView.kf.setImage(with: URL(string: model.iconeUrl))
         setupScreenshot(model: model)
     }
     
     func setupScreenshot(model: App) {
         if let screenshots = model.screenshotUrls {
             if screenshots.count > 0 {
-                screenshot1ImageView.loadImage(from: screenshots[0])
+                screenshot1ImageView.kf.setImage(with: URL(string: screenshots[0]))
             }
             
             if screenshots.count > 1 {
-                screenshot2ImageView.loadImage(from: screenshots[1])
+                screenshot2ImageView.kf.setImage(with: URL(string: screenshots[1]))
             }
             
             if screenshots.count > 2 {
-                screenshot3ImageView.loadImage(from: screenshots[2])
+                screenshot3ImageView.kf.setImage(with: URL(string: screenshots[2]))
             }
         }
     }

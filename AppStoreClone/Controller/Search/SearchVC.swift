@@ -1,10 +1,7 @@
 import UIKit
 
 class SearchVC: UITableViewController, UISearchBarDelegate {
-    
     private let service = Service()
-    
-    let searchCellId = "cellId"
     let searchController = UISearchController(searchResultsController: nil)
     
     private var apps = [App]()
@@ -12,7 +9,7 @@ class SearchVC: UITableViewController, UISearchBarDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.register(SearchCell.self, forCellReuseIdentifier: searchCellId)
+        tableView.register(SearchCell.self, forCellReuseIdentifier: SearchCell.searchCellReuseId)
         setupSearchBar()
     }
     
@@ -57,8 +54,9 @@ extension SearchVC {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: searchCellId, for: indexPath) as? SearchCell else { return UITableViewCell() }
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: SearchCell.searchCellReuseId, for: indexPath) as? SearchCell else { return UITableViewCell() }
         cell.setupAppCell(app: apps[indexPath.row])
+        cell.selectionStyle = .none
         return cell
     }
 }
