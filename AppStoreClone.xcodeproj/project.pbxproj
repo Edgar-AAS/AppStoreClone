@@ -285,7 +285,6 @@
 				72C0C77C2938033300831948 /* TodayVC.swift */,
 				72C0C7832938137D00831948 /* TodayDetailVC.swift */,
 				72A3BF902938DD1300AF857A /* OnlyDetailVC.swift */,
-				72915237293E302D00DC8882 /* TodayMultipleTableViewCell.swift */,
 				7291523A293E462600DC8882 /* TodayDetailMultipleVC.swift */,
 				7291523D293E6ABC00DC8882 /* TodayMultipleHeader.swift */,
 			);
@@ -299,6 +298,7 @@
 				72F0FE09293A3FCD003AC844 /* OnlyDetailCell.swift */,
 				72F0FE12293A6E0C003AC844 /* TodayMultipleCell.swift */,
 				72915240293EA53C00DC8882 /* TodayHeader.swift */,
+				72915237293E302D00DC8882 /* TodayMultipleTableViewCell.swift */,
 			);
 			path = Today;
 			sourceTree = "<group>";

@@ -24,7 +24,7 @@ class TodayCell: UICollectionViewCell {
     private lazy var categoryLabel: UILabel = .texLabel(text: "VIAGEM", fontSize: 18)
     private lazy var titleLabel: UILabel = .texBoldLabel(text: "Explore o mundo \nsem medo", fontSize: 28, numberOfLines: 2)
     lazy var imageView: UIImageView = .todayImageView(named: "destaque-1")
-    private lazy var descriptionLabel: UILabel = .texLabel(text: "Podemo viajar o mundo em busca da beleza, mas nunca encontraremos se nao a carregarmos dentro de nós.", fontSize: 14, numberOfLines: 3)
+    private lazy var descriptionLabel: UILabel = .texLabel(text: "Podemos viajar o mundo em busca da beleza, mas nunca encontraremos se nao a carregarmos dentro de nós.", fontSize: 14, numberOfLines: 3)
     
     override init(frame: CGRect) {
         super.init(frame: frame)

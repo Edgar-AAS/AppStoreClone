@@ -1,14 +1,13 @@
 import UIKit
 
 class OnlyDetailCell: UITableViewCell {
-    
     static let reuseIdentifier = String(describing: OnlyDetailCell.self)
     
     let descriptionLabel: UILabel = {
         let label = UILabel()
         
         let textAtributes = NSMutableAttributedString(string: "Lorem ipsum", attributes: [NSAttributedString.Key.foregroundColor : UIColor.black])
-        textAtributes.append(NSAttributedString(string: " é simplesmente uma simulacao de texto da instrurai tipografica de de inpressos e vem sendo ultiliczado desde o seculo xv1, quando um impressor desconejcido pegou uma bandeka de tipos e embaralhao para fazer um livro de modelos de tipos.", attributes: [NSAttributedString.Key.foregroundColor : UIColor.gray]))
+        textAtributes.append(NSAttributedString(string: " é simplesmente uma simulacao de texto da industria tipografica de impressos e vem sendo ultilizado desde o seculo XVI, quando um impressor desconhecido pegou uma bandeja de tipos e embaralhou para fazer um livro de modelos de tipos.", attributes: [NSAttributedString.Key.foregroundColor : UIColor.gray]))
         
         
         textAtributes.append(NSAttributedString(
@@ -16,21 +15,21 @@ class OnlyDetailCell: UITableViewCell {
             attributes: [NSAttributedString.Key.foregroundColor : UIColor.black])
         )
         
-        textAtributes.append(NSAttributedString(string: " é simplesmente uma simulacao de texto da instrurai tipografica de de inpressos e vem sendo ultiliczado desde o seculo xv1, quando um impressor desconejcido pegou uma bandeka de tipos e embaralhao para fazer um livro de modelos de tipos.", attributes: [NSAttributedString.Key.foregroundColor : UIColor.gray]))
+        textAtributes.append(NSAttributedString(string: " é simplesmente uma simulacao de texto da industria tipografica de impressos e vem sendo ultilizado desde o seculo XVI, quando um impressor desconhecido pegou uma bandeja de tipos e embaralhou para fazer um livro de modelos de tipos.", attributes: [NSAttributedString.Key.foregroundColor : UIColor.gray]))
         
         textAtributes.append(NSAttributedString(
             string: "\n\nDe onde ele vem?",
             attributes: [NSAttributedString.Key.foregroundColor : UIColor.black])
         )
         
-        textAtributes.append(NSAttributedString(string: " é simplesmente uma simulacao de texto da instrurai tipografica de de inpressos e vem sendo ultiliczado desde o seculo xv1, quando um impressor desconejcido pegou uma bandeka de tipos e embaralhao para fazer um livro de modelos de tipos.", attributes: [NSAttributedString.Key.foregroundColor : UIColor.gray]))
+        textAtributes.append(NSAttributedString(string: " é simplesmente uma simulacao de texto da industria tipografica de impressos e vem sendo ultilizado desde o seculo XVI, quando um impressor desconhecido pegou uma bandeja de tipos e embaralhou para fazer um livro de modelos de tipos.", attributes: [NSAttributedString.Key.foregroundColor : UIColor.gray]))
         
         textAtributes.append(NSAttributedString(
             string: "\n\nDe onde ele vem?",
             attributes: [NSAttributedString.Key.foregroundColor : UIColor.black])
         )
         
-        textAtributes.append(NSAttributedString(string: " é simplesmente uma simulacao de texto da instrurai tipografica de de inpressos e vem sendo ultiliczado desde o seculo XVI, quando um impressor desconejcido pegou uma bandeka de tipos e embaralhao para fazer um livro de modelos de tipos.", attributes: [NSAttributedString.Key.foregroundColor : UIColor.gray]))
+        textAtributes.append(NSAttributedString(string: " é simplesmente uma simulacao de texto da industria tipografica de impressos e vem sendo ultilizado desde o seculo XVI, quando um impressor desconhecido pegou uma bandeja de tipos e embaralhou para fazer um livro de modelos de tipos.", attributes: [NSAttributedString.Key.foregroundColor : UIColor.gray]))
         
         
         label.attributedText = textAtributes
@@ -54,8 +53,4 @@ class OnlyDetailCell: UITableViewCell {
     required init?(coder: NSCoder) {
         fatalError()
     }
-    
-    
-    
-    
 }

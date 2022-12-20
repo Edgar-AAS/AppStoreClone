@@ -10,8 +10,7 @@ class TodayMultipleTableViewCell: UITableViewCell {
             }
         }
     }
-    
-    
+
     static let reuseIdentifier = String(describing: TodayMultipleTableViewCell.self)
     
     let iconImageView: UIImageView = .iconImageView(widht: 48, height: 48)

@@ -3,7 +3,7 @@ import UIKit
 class TodayMultipleCell: UICollectionViewCell {
     static let reuseIdentifier = String(describing: TodayMultipleCell.self)
     let categoryLabel: UILabel = .texLabel(text: "VIAGEM", fontSize: 18)
-    let titleLabel: UILabel = .texBoldLabel(text: "Explre o mundo \nsem medo", fontSize: 28, numberOfLines: 2)
+    let titleLabel: UILabel = .texBoldLabel(text: "Explore o mundo \nsem medo", fontSize: 28, numberOfLines: 2)
     
     var tablewView: UITableView!
     

@@ -38,7 +38,6 @@ class AppDetailVC: UICollectionViewController, UICollectionViewDelegateFlowLayou
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         navigationItem.largeTitleDisplayMode = .never
         collectionView.register(AppDetailHeaderCell.self, forCellWithReuseIdentifier: AppDetailHeaderCell.reuseIdentifier)
         collectionView.register(AppDetailDescriptionCell.self, forCellWithReuseIdentifier: AppDetailDescriptionCell.reuseIdentifier)

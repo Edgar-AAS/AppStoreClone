@@ -1,12 +1,4 @@
-//
-//  TodayHeader.swift
-//  AppStoreClone
-//
-//  Created by Leonardo Almeida on 05/12/22.
-//
-
 import UIKit
-
 
 class TodayHeader: UICollectionReusableView {
     static let reuseIdentifier = String(describing: TodayHeader.self)
@@ -64,5 +56,4 @@ class TodayHeader: UICollectionReusableView {
         image.contentMode = .scaleAspectFill
         return image
     }()
-    
 }
