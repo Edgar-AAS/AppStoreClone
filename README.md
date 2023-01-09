@@ -5,7 +5,7 @@
 
 # Sobre o projeto
 
-App desenvolvido junto ao curso iOS 13 & Swift 5 - Recriando a App Store + RESTFUL API PHP, com intuíto de recriar as funcionalidades do aplicativo App Store. Neste aplicativo pude me aprofudar na construção de interfaces de usuário e animação utilizando constraints.
+App desenvolvido junto ao curso iOS 13 & Swift 5 - Recriando a App Store + RESTFUL API PHP. Neste aplicativo pude me aprofundar na construção de interfaces de usuário e animação utilizando constraints.
 
 ## Layout mobile
 
